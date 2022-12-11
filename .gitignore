@@ -1,0 +1,8 @@
+.idea
+*.iml
+out
+gen
+
+# User Add
+/**/static/*
+!static/README.md

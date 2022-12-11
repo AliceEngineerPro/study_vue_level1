@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+@File: 03_数据绑定.html
+@Author: Alice(From Chengdu.China)
+@HomePage: https://github.com/AliceEngineerPro
+@CreatedTime: 2022/12/11 23:08
+-->
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../static/js/vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <div v-text="text_data"></div>
+    <div v-html="html_data"></div>
+    <div v-pre>{{text_data}}</div>
+</div>
+<script>
+    const vm = new Vue({
+        el: '#app',
+        data: {
+            text_data: 'v-text指令',
+            html_data: '<h1>HTML</h1>'
+        }
+    })
+</script>
+</body>
+</html>
